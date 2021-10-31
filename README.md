@@ -1,7 +1,13 @@
 # enable_led & disable_led <br>
-Basically a simple group of 2 redistributable **Python script files** to help fix the problem of Keyboard LEDs that doesn't want to turn on When running on **Linux**. <br>
+Basically group of simple 2 **Python script files** to help fix the problem of Keyboard LEDs that doesn't want to turn on When running on **Linux**. <br>
 
 <br>
+
+## Required Packages: <br>
+* `pillow` *Optional*
+* `colorama`
+
+
 
 ## How to compile into distributable binaries?: <br>
 **In order to compile these Python script files into Linux binaries, you must have `pyinstaller` installed, alongwith `auto-py-to-exe` when necessary** <br>
@@ -43,7 +49,7 @@ sudo cp disable_led /usr/bin/disable_led
 
 <br>
 
-* Enjoy using them! <br>
+* Enjoy! <br>
 
 ```sh
 # to enable keyboard backlight
