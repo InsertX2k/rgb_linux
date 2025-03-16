@@ -1,11 +1,12 @@
 # enable_led & disable_led <br>
-Basically group of simple 2 **Python script files** to help fix the problem of Keyboard LEDs that doesn't want to turn on When running on **Linux**. <br>
+Two simple Python 3.x based scripts for toggling the status of the keyboard's scrolllock LED <br>
 
 <br>
 
 ## Required Packages: <br>
-* `pillow` *Optional*
-* `colorama`
+* `colorama`: `pip3 install colorama`
+* `pyinstaller`: `pip3 install pyinstaller`
+* it probably only works on ubuntu based linux distributions only.
 
 
 
@@ -16,6 +17,7 @@ Basically group of simple 2 **Python script files** to help fix the problem of K
 * Download both of the scripts `enable_led` and `disable_led` <br>
 * Make a working directory. <br>
 ```sh
+cd ~
 mkdir working-dir
 cd working-dir
 ``` 
@@ -23,24 +25,24 @@ cd working-dir
 
 * Copy scripts from your `Downloads` folder to the `working-dir` you have just made. <br>
 ```sh
-cp enable_led.py /working-dir/enable_led.py
-cp disable_led.py /working-dir/disable_led.py
+cp enable_led.py ~/working-dir/enable_led.py
+cp disable_led.py ~/working-dir/disable_led.py
 ```
 <br>
 
 * Compile them with `pyinstaller` <br>
 
 ```sh
-pyinstaller enable_led.py
-pyinstaller disable_led.py
+pyinstaller --onefile enable_led.py
+pyinstaller --onefile disable_led.py
 ```
 <br>
 
 * Copy them into `/usr/bin` for easier access later. <br>
 
 ```sh
-sudo cp enable_led /usr/bin/enable_led
-sudo cp disable_led /usr/bin/disable_led
+sudo cp -fv ./enable_led /usr/bin/enable_led
+sudo cp -fv ./disable_led /usr/bin/disable_led
 ```
 
 <br>
