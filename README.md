@@ -65,4 +65,4 @@ disable_led
 
 
 ## License <br>
-This script file is licensed under the **Public Domain License**.
+these are just some basic 2 script files i don't have to put a license for them.
